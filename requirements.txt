@@ -1,0 +1,20 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-dotenv==1.0.1
+pydantic==2.9.2
+
+# GCP
+google-cloud-compute==1.19.2
+google-cloud-storage==2.18.2
+google-api-python-client==2.146.0
+google-auth==2.34.0
+google-cloud-bigquery==3.25.0
+
+# AWS (added when we build that adapter)
+# boto3==1.35.0
+
+# Azure (added when we build that adapter)
+# azure-identity==1.17.1
+# azure-mgmt-compute==31.0.0
+# azure-mgmt-storage==21.2.1
+# azure-mgmt-costmanagement==4.0.1

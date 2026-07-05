@@ -1,0 +1,80 @@
+{
+  "resources": [
+    {
+      "id": "gcp-instance-web-01",
+      "provider": "gcp",
+      "type": "compute",
+      "name": "web-01",
+      "region": "us-central1-a",
+      "status": "RUNNING",
+      "tags": { "env": "prod", "team": "platform" },
+      "source": "mock",
+      "raw": {}
+    },
+    {
+      "id": "gcp-instance-worker-01",
+      "provider": "gcp",
+      "type": "compute",
+      "name": "worker-01",
+      "region": "us-central1-b",
+      "status": "TERMINATED",
+      "tags": { "env": "dev", "team": "data" },
+      "source": "mock",
+      "raw": {}
+    },
+    {
+      "id": "gcp-bucket-assets",
+      "provider": "gcp",
+      "type": "storage",
+      "name": "company-assets-bucket",
+      "region": "us-central1",
+      "status": "ACTIVE",
+      "tags": { "env": "prod" },
+      "source": "mock",
+      "raw": {}
+    },
+    {
+      "id": "gcp-sql-primary",
+      "provider": "gcp",
+      "type": "database",
+      "name": "primary-postgres",
+      "region": "us-central1",
+      "status": "RUNNABLE",
+      "tags": { "env": "prod", "team": "platform" },
+      "source": "mock",
+      "raw": {}
+    }
+  ],
+  "costs": [
+    {
+      "provider": "gcp",
+      "service": "Compute Engine",
+      "granularity": "MONTHLY",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-31",
+      "amount_usd": 118.20,
+      "type": "actual",
+      "source": "mock"
+    },
+    {
+      "provider": "gcp",
+      "service": "Cloud Storage",
+      "granularity": "MONTHLY",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-31",
+      "amount_usd": 14.55,
+      "type": "actual",
+      "source": "mock"
+    },
+    {
+      "provider": "gcp",
+      "service": "Cloud SQL",
+      "granularity": "MONTHLY",
+      "period_start": "2026-07-01",
+      "period_end": "2026-07-31",
+      "amount_usd": 41.10,
+      "type": "actual",
+      "source": "mock"
+    }
+  ]
+}
