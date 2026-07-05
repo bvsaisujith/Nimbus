@@ -1,0 +1,3 @@
+[submodule "nimbus-frontendz"]
+	path = nimbus-frontendz
+	url = git@github.com:sandeepsakivelu-code/nimbus-frontendz
